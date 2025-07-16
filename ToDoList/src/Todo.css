@@ -1,0 +1,136 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.toDoList {
+  background: #000000;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 0 10px rgba(212, 255, 0, 0.3);
+}
+
+.toDoList h1 {
+  margin-bottom: 20px;
+}
+
+/* New Task Section */
+.new {
+  background: #a02c12;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.new input {
+  padding: 8px;
+  flex: 1;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.new button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  background: #00aeff;
+  color: white;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+/* Task list structure */
+.lists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  color: #000;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.header {
+  font-weight: bold;
+  background: #ccc;
+}
+
+/* Task item */
+.items {
+  background: #fafafa;
+}
+
+/* Completed task style */
+.comp {
+  background: #d4ffd8;
+  color: #000;
+  text-decoration: line-through;
+}
+
+/* Buttons inside task rows */
+.lists button {
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 2px;
+  font-size: 14px;
+}
+
+.lists button:first-child {
+  background: #ff4d4d; /* Delete button */
+  color: white;
+}
+
+.lists button:last-child {
+  background: #01bf1a; /* Complete button */
+  color: white;
+}
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 600px) {
+  .new {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .new input,
+  .new button {
+    width: 100%;
+  }
+
+  .lists {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .lists h4 {
+    margin: 5px 0;
+  }
+
+  .lists > div {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+}
