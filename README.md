@@ -14,12 +14,7 @@ This is a simple and stylish To-Do List app built with **React**. It allows user
 - ✅ Auto-update copyright year
 - ✅ Add tasks using the `Enter` key
 
----
 
-## 📸 Preview
-
-![To-Do App Screenshot](./screenshot.png) <!-- Replace or remove this line if no screenshot -->
-![To-Do App Screenshot](./assets/img.png)
 
 
 ---
